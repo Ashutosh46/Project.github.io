@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>CLV Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+ <style>
+ .login{overflow-y:scroll;
+ }
+ </style>
+</head>
+   
+<body>
+ <div class="login">
+	<h1>Predict Customer Life-Time Value</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="number" name="Monthly Premium Auto" placeholder="Monthly Premium Auto" required="required" />
+        <input type="number" name="Months Since Last Claim" placeholder="Months Since Last Claim" required="required" />
+		<input type="number" name="Months Since Policy Inception" placeholder="Months Since Policy Inception" required="required" />  
+               <input type="number" name="Number of Open Complaints" placeholder="Number of Open Complaints" required="required" />
+                  <input type="number" name="Number of Policies" placeholder="Number of Policies" required="required" />
+                     <input type="number" name="Total Claim Amount" placeholder="Total Claim Amount" required="required" />
+                        <input type="number" name="EmploymentStatus_Employed" placeholder="EmploymentStatus_Employed" required="required" />
+                          <input type="number" name="Marital Status_Single" placeholder="Marital Status_Single" required="required" />
+                            <input type="number" name="Renew Offer Type_Offer1" placeholder="Renew Offer Type_Offer1" required="required" />
+                              <input type="number" name="Renew Offer Type_Offer2" placeholder="Renew Offer Type_Offer2" required="required" />
+                                <input type="number" name="Vehicle Class_Four-Door Car" placeholder="Vehicle Class_Four-Door Car" required="required" />
+                                  <input type="number" name="Vehicle Class_SUV" placeholder="Vehicle Class_SUV" required="required" />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
