@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>CLV Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+ <style>
+ .login{overflow-y:scroll;
+ }
+ </style>
+</head>
+   
+<body>
+ <div class="login">
+	<h1>Predict Customer Life-Time Value</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="number" name="Monthly Premium Auto" placeholder="Monthly Premium Auto" required="required" />
+      
+        <input type="number" name="Months Since Last Claim" placeholder="Months Since Last Claim" required="required" />
+        
+		<input type="number" name="Months Since Policy Inception" placeholder="Months Since Policy Inception" required="required" />  
+    
+               <input type="number" name="Number of Open Complaints" placeholder="Number of Open Complaints" required="required" />
+               
+                  <input type="number" name="Number of Policies" placeholder="Number of Policies" required="required" />
+                  
+                     <input type="number" name="Total Claim Amount" placeholder="Total Claim Amount" required="required" />
+                     
+                      <label for="employment status_employed">EmploymentStatus_Employed</label>
+                      <select id="employment status_employed" name="employed status_employed">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        </select>
+                        
+                       <label for="marital status_single">Marital Status_Single</label>
+                      <select id="marital status_single" name="marital status_single">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        </select>
+                        
+                        <label for="renew offer type_offer1">Renew Offer Type_Offer1</label>
+                        <select id="renew offer type_offer1" name="renew offer type_offer1">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          </select>
+                          
+                         <label for="renew offer type_offer2">Renew Offer Type_Offer2</label>
+                         <select id="renew offer type_offer2" name="renew offer type_offer2">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                         </select>
+                          
+                        <label for="vehicle class_four-door car">Vehicle Class_Four-Door Car</label>
+                        <select id="vehicle class four-door car" name="vehicle class four-door car">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                        </select>
+                         
+                         <label for="vehicle class_suv">Vehicle Class_SUV</label>
+                         <select id="vehicle class_suv" name="vehicle class_suv">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                         </select>
+                          
+        <button type="submit" class="btn btn-primary btn-block btn-large"<a href="app.py">Predict</a></button>
+    </form>
+
+   <br>
+   <br>
+   { prediction_text }
+
+ </div>
+
+
+</body>
+</html>
