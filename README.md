@@ -21,5 +21,5 @@ Aim- The main aim of the project is to predict customer lifetime value using var
  6. Encoding
  7. Splitting the data.
  8. Scaling.
- 9. Modelling the data
+ 9. Modeling the data
  10. Testing the data. 
