@@ -7,5 +7,5 @@ This is a README file which provides an overview of the project
 * Credits
 
 ## Dataset used in the project can be downloaded from the link below-
-https://www.kaggle.com/datasets/somjee/auto-insurance-customerlifetimevalue
-The main aim of the project is to predict customer lifetime value using various features
+https://www.kaggle.com/datasets/somjee/auto-insurance-customerlifetimevalue  
+*The main aim of the project is to predict customer lifetime value using various features*
