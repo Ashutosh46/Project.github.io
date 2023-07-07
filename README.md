@@ -7,7 +7,7 @@ This is a README file which provides an overview of the project.  The data used 
 - Usage
 - Credits
 
-Aim- The main aim of the project is to predict customer lifetime value using various features.
+Aim - The main aim of the project is to predict customer lifetime value using various features.
 
 Project Desciption-
 1. Finding missing Values
@@ -19,4 +19,16 @@ Project Desciption-
 7. Splitting the data.
 8. Scaling.
 9. Modeling the data
-10. Testing the data. 
+10. Testing the data.
+
+Installation -   
+This project requires Python and the following Python libraries installed:
+- NumPy
+- Pandas
+- matplotlib
+- scikit-learn
+- TensorFlow  
+You will also need to have software installed to run and execute a Jupyter Notebook.  
+If you do not have Python installed yet, it is highly recommended that you install the Anaconda distribution of Python, which already has the above packages and more included.
+
+Usage - 
