@@ -32,7 +32,8 @@ You will also need to have software installed to run and execute a Jupyter Noteb
 If you do not have Python installed yet, it is highly recommended that you install the Anaconda distribution of Python, which already has the above packages and more included.
 
 Usage -   
-For a company to make strategic business decisions, it is very important to recognise it's potential customers. By using this model one can know how much a customer can benefit an insurance company. So accordingly the business and revenue model can be created to profit its business.   
+For a company to make strategic business decisions, it is very important to recognise it's potential customers. By using this model one can know how much a customer can benefit an insurance company. So accordingly the business and revenue model can be created to profit its business.  
+   
 Acknowledgement -   
 This project was a personal project so it does not have any other human contributors. However various research papers were referred to get extensive knowledge of the algorithm used. These are the papers [1](https://www.sciencedirect.com/science/article/abs/pii/S0306261918315010) [2](https://www.sciencedirect.com/science/article/abs/pii/S0304380019302145) [3](https://escholarship.org/uc/item/35x3v9t4).    
 The image used in the README file has been taken form [here](https://www.retently.com/blog/increase-customer-lifetime-value/).  
