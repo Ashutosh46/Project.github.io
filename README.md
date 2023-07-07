@@ -5,7 +5,7 @@ This is a README file which provides an overview of the project.  The data used 
 - Project Description
 - Installation
 - Usage
-- Credits
+- Acknowledgement
 
 Aim - The main aim of the project is to predict customer lifetime value using various features.
 
@@ -31,4 +31,7 @@ This project requires Python and the following Python libraries installed:
 You will also need to have software installed to run and execute a Jupyter Notebook.  
 If you do not have Python installed yet, it is highly recommended that you install the Anaconda distribution of Python, which already has the above packages and more included.
 
-Usage - 
+Acknowledgement -   
+The image used in the README file has been taken form [here](https://www.retently.com/blog/increase-customer-lifetime-value/).  
+
+
